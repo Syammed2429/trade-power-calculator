@@ -43,7 +43,7 @@ export function RateTiers({ tiers, setTiers }: RateTiersProps) {
         </div>
       </CardHeader>
       <CardContent>
-        <div className='grid grid-cols-2 gap-2'>
+        <div className='grid md:grid-cols-2 gap-2'>
           {tiers.map((tier, i) => (
             <div
               key={i}
