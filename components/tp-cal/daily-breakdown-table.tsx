@@ -27,34 +27,36 @@ export function DailyBreakdownTable({ dailyData }: DailyBreakdownTableProps) {
           </Badge>
         </CardTitle>
       </CardHeader>
-      <CardContent>
-        <div className='overflow-auto max-h-64 rounded-md border border-slate-800'>
+      <CardContent className='p-0'>
+        <div className='relative overflow-auto max-h-[400px] border-t border-slate-800'>
           <Table>
-            <TableHeader className='sticky top-0 bg-slate-800 z-10'>
+            <TableHeader>
               <TableRow className='border-slate-700'>
-                <TableHead className='text-slate-300 text-xs'>Day</TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs sticky top-0 bg-slate-800 z-10'>
+                  Day
+                </TableHead>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   Active TP
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-center'>
+                <TableHead className='text-slate-300 text-xs text-center sticky top-0 bg-slate-800 z-10'>
                   Rate
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   Daily Profit
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   New TP
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   Injected
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   Cumulative
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   Batches
                 </TableHead>
-                <TableHead className='text-slate-300 text-xs text-right'>
+                <TableHead className='text-slate-300 text-xs text-right sticky top-0 bg-slate-800 z-10'>
                   To Expire
                 </TableHead>
               </TableRow>
